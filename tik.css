@@ -1,0 +1,70 @@
+body {
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+  }
+  
+  .navbars {
+    width:230vh;
+    height: 120px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    margin-top: -10px;
+    margin-left: -10px;
+  }
+  
+  .navbar-containers {
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+    height: 100%;
+    color: white;
+    font-family: "Sen", sans-serif;
+    cursor: pointer;
+  }
+  
+  .logo-containers {
+    flex: 1;
+  }
+  
+  .logos {
+    font-size: 30px;
+    color: #4dbf00;
+  }
+  
+  .menu-containers {
+    flex: 6;
+  }
+  
+  .menu-lists {
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu-list-items {
+    margin-right: 30px;
+  }
+  .menu-list-items P {
+    margin-right: 30px;
+}
+  
+  .menu-list-item.actives {
+    font-weight: bold;
+  }
+  .profile-containers {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .profile-text-containers {
+    margin: 0 20px;
+  }
+  .them{
+    /* height: 50vh; */
+    width: 260vh;
+    margin-top: +150px;
+    margin-left: -720px;
+  }
+  

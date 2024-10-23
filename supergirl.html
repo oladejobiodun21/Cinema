@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="sop.css" />
+
+    <!--===== Boxicons CSS =====-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="c:\Users\HP\Downloads\1x\1x\pathtoyourlogo.png.png"
+      type="DreamScreen"
+    />
+    <title>DreamScreen</title>
+  </head>
+  <style>
+    body {
+      background-color: black;
+      margin: 0;
+      padding: 0;
+    }
+    section {
+      width: 100%;
+      height: 100vh;
+      background: url(Supergirl.jpeg);
+      /* background-size: cover; */
+      background-repeat: none;
+      position: relative;
+      z-index: -100;
+      overflow: hidden;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.292);
+      z-index: -5;
+    }
+    ul {
+      margin: 300px 200px;
+      padding: 0;
+      display: flex;
+    }
+    ul li {
+      list-style: none;
+      padding: 20px 50px;
+      margin-left: 80px;
+    }
+    ul li a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 23px;
+      color: white;
+      z-index: 2;
+      position: fixed;
+
+      /* margin-top: -500px; */
+    }
+    .hii {
+      margin-top: -910px;
+      margin-left: 40px;
+      z-index: 2;
+    }
+    .them {
+      border-radius: 7%;
+      width: 70vh;
+      margin-left: 80px;
+      margin-top: -60px;
+      image-resolution: 500px;
+    }
+    .us {
+      background-color: red;
+      width: 100%;
+      width: 100%;
+    }
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 100%;
+      height: 15%;
+      position: fixed;
+    }
+    .navbar p {
+      color: chartreuse;
+      font-size: 2em;
+      margin-left: 50px;
+    }
+    .overlay h1 {
+      color: rgb(255, 255, 255);
+      font-size: 3em;
+      font-weight: bold;
+      left: 0;
+      margin-top: 300px;
+      margin-left: 530px;
+    }
+    .overlay h2 {
+      color: rgb(255, 255, 255);
+      font-size: 1.5em;
+      left: 0;
+      margin-left: 530px;
+    }
+    .overlay p {
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      font-weight: LIGHT;
+      left: 0;
+      margin-left: 530px;
+    }
+    .CAST h1 {
+      color: white;
+      margin-left: 530px;
+      margin-top: -300px;
+      letter-spacing: 7px;
+    }
+    .SOW {
+      width: 10vh;
+      margin-left: 540px;
+      border-radius: 10%;
+    }
+    .SOWs {
+      width: 10vh;
+      margin-left: 630px;
+      border-radius: 10%;
+    }
+    .SOWss {
+      width: 10vh;
+      margin-left: 720px;
+      border-radius: 10%;
+    }
+    .cases {
+      margin-top: -110px;
+    }
+    .casess {
+      margin-top: -110px;
+    }
+    .case p {
+      font-size: 13px;
+      color: white;
+      margin-left: 540px;
+      margin-top: 20px;
+    }
+    .cases p {
+      font-size: 13px;
+      color: white;
+      margin-top: 19px;
+      margin-left: 630px;
+    }
+    .casess p {
+      font-size: 13px;
+      color: white;
+      margin-top: 19px;
+      margin-left: 720px;
+    }
+    .yup p {
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      font-weight: lighter;
+      margin-top: 150px;
+      margin-left: 90px;
+      letter-spacing: 5px;
+    }
+    .Show p {
+      color: white;
+      color: rgb(255, 255, 255);
+      font-size: 20px;
+      font-weight: lighter;
+      margin-top: -100px;
+      margin-left: 90px;
+      letter-spacing: 5px;
+    }
+    .Shows {
+      display: flex;
+      background: #ffffff;
+      padding: 10px;
+      font-size: 18px;
+      font-weight: 400;
+      border-radius: 12px;
+      /* border-style: outset;
+    border-width: 3px;
+    border-color: #4dbf00; */
+      align-items: center;
+      cursor: pointer;
+      justify-content: space-between;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      width: 27vh;
+      margin-left: 80px;
+    }
+    .Shows:hover {
+      background-color: black;
+      border-style: outset;
+      border-width: 3px;
+      border-color: #ffffff;
+    }
+    .item-texts {
+      color: rgb(0, 0, 0);
+      margin-left: 8px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .item-texts:hover {
+      color: white;
+    }
+    .Showss {
+      display: flex;
+      background: #ffffff;
+      padding: 10px;
+      font-size: 18px;
+      font-weight: 400;
+      border-radius: 12px;
+      /* border-style: outset;
+    border-width: 3px;
+    border-color: #4dbf00; */
+      align-items: center;
+      cursor: pointer;
+      justify-content: space-between;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      width: 27vh;
+      margin-left: 279px;
+      margin-top: -43px;
+    }
+    .Showss:hover {
+      background-color: black;
+      border-style: outset;
+      border-width: 3px;
+      border-color: #ffffff;
+    }
+    .item-textss {
+      color: rgb(0, 0, 0);
+      margin-left: 8px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .item-textss:hover {
+      color: white;
+    }
+
+    /* ul li a:before{
+        content: "";
+        width: 10px;
+        height: 3px;
+        background-color: chartreuse;
+        position: absolute;
+        top: 120%;
+        left: 0;
+        transition: .5s;
+        mix-blend-mode: multiply;
+    }
+    ul li a:after{
+        content: "";
+        width: 10px;
+        height: 3px;
+      background-color: tomato;
+        position: absolute;
+        top: 120%;
+       right: 0;
+        transition: .5s;
+        mix-blend-mode: multiply;
+    }
+    ul li:hover a:before{
+        width: 50%;
+        transform: translateX(100%);
+    }
+    ul li:hover a:after{
+        width: 50%;
+        transform: translateX(100%);
+    } */
+  </style>
+  <body>
+    <section>
+      <div class="navbar">
+        <h1>DreamScreen</h1>
+      </div>
+
+      <div class="overlay"></div>
+    </section>
+    <div class="hii">
+      <ul>
+        <!-- <li><a href="">FOOD & DRINKS</a></li> -->
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
+      </ul>
+    </div>
+    <div class="opend">
+      <img src="Supergirl.jpeg" class="them" />
+    </div>
+    <div class="overlay">
+      <h1>A Night In 2005</h1>
+      <h2>Plot Summary</h2>
+      <p>
+        What started out as a fun night at a prom after party in 2005,
+        <br />
+        quickly turns into Ife's worst nightmare. She carries a dark secret from
+        that night into adulthood that continues to plague her everyday life.
+      </p>
+    </div>
+    <div class="CAST">
+      <h1>CAST</h1>
+    </div>
+    <div class="case">
+      <img
+        src="c:\Users\HP\Downloads\MV5BMjE3OTE1NTUzNV5BMl5BanBnXkFtZTgwNDY5ODc5OTE@._V1_QL75_UX140_CR0,13,140,140_.jpg"
+        class="SOW"
+      />
+      <p>Iretioluwa</p>
+    </div>
+    <div class="cases">
+      <img
+        src="c:\Users\HP\Downloads\MV5BN2ZiMDJiOGYtMTQ3ZC00MDEwLWFmNTUtMzExNDFkNjRiOTU3XkEyXkFqcGc@._V1_QL75_UX140_CR0,0,140,140_.jpg"
+        class="SOWs"
+      />
+      <p>Efa Iwara</p>
+    </div>
+    <div class="casess">
+      <img
+        src="c:\Users\HP\Downloads\MV5BMDUxZDczZjktZGMzNi00YWMyLWI1NTMtZTUzZDg5YmNlMTM4XkEyXkFqcGc@._V1_QL75_UX140_CR0,12,140,140_.jpg"
+        class="SOWss"
+      />
+      <p>Ebunoluwa</p>
+    </div>
+    <div class="yup">
+      <p>Select Location</p>
+    </div>
+    <div class="select-menu">
+      <div class="select-btn">
+        <span class="sBtn-text">Lagos</span>
+        <i class="bx bx-chevron-down"></i>
+      </div>
+
+      <ul class="options">
+        <li class="option">
+          <span class="option-text">Kaduna</span>
+        </li>
+        <li class="option">
+          <!-- <i class="bx bxl-instagram-alt" style="color: #E1306C;"></i> -->
+          <span class="option-text">Abuja</span>
+        </li>
+        <li class="option">
+          <!-- <i class="bx bxl-linkedin-square" style="color: #0E76A8;"></i> -->
+          <span class="option-text">Abeokuta</span>
+        </li>
+        <li class="option">
+          <!-- <i class="bx bxl-facebook-circle" style="color: #4267B2;"></i> -->
+          <span class="option-text">Oyo state</span>
+        </li>
+      </ul>
+    </div>
+    <div class="custom-select">
+      <div class="custom-btn">
+        <span class="btn-text">Today</span>
+        <i class="bx bx-chevron-down"></i>
+      </div>
+
+      <ul class="custom-options">
+        <li class="custom-option">
+          <span class="option-text">Oct,Tue 22</span>
+        </li>
+        <li class="custom-option">
+          <span class="option-text">Oct,Wed 23</span>
+        </li>
+        <li class="custom-option">
+          <span class="option-text">Oct,Thu 24</span>
+        </li>
+        <li class="custom-option">
+          <span class="option-text">Oct,Fri 25</span>
+        </li>
+      </ul>
+    </div>
+    <div class="Show">
+      <p>Select a Show Time</p>
+    </div>
+    <div class="Shows">
+      <span class="item-texts">4:00 AM - Premium</span>
+    </div>
+    <div class="Showss">
+      <span onclick="book()" class="item-textss">7:00 AM - Premium</span>
+    </div>
+    <div class="ty">
+      <h1>i am</h1>
+    </div>
+
+    <!-- <div class="text">
+        <p>A Night In 2005</p>
+    </div> -->
+    <script src="sop.js"></script>
+    <script src="sops.js"></script>
+  </body>
+</html>

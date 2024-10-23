@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamScreen Cinema</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="c:\Users\HP\Downloads\pathtoyourlogo.png.png2.png" type="DreamScreen">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #000000, #4b4b4b);
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: -400px;
+    text-align: center;
+    background-color: transparent;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 1.2s forwards;
+    animation-delay: 0.6s;
+    margin-top: +500px;
+}
+.welcome{
+    background-color: transparent;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.welcome h1 {
+    font-size: 3em;
+    margin: 0;
+    animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+.welcome p {
+    font-size: 1.5em;
+    margin: 20px 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.book-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #4dbf00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-button:hover {
+    background-color: #4dbf00;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .welcome h1 {
+        font-size: 2.5em;
+    }
+
+    .welcome p {
+        font-size: 1.2em;
+    }
+
+    .book-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
+.logo-container {
+    text-align: center;
+    margin-top: -300px;
+}
+
+.logo {
+    width: 120px; /* Adjust size as needed */
+    opacity: 0;
+    transform: scale(0) rotate(-360deg);
+    transition: opacity 1s ease, transform 1s ease;
+    margin-left: -50px;
+}
+
+.logo-container.show .logo {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+}
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="welcome">
+            <h1>Welcome to DreamScreen Cinema!</h1>
+            <p>Experience movies like never before.</p>
+            <button onclick="book()" class="book-button">Book Now</button>
+        </div>
+        <!-- <div class="logo-container" id="logo-container">
+            <img src="c:\Users\HP\Downloads\1x\1x\pathtoyourlogo.png.png" alt="Ds Logo" class="logo" id="logo">
+        </div> -->
+    </div>
+    <script src="welcome.js"></script>
+</div>
+</body>
+</html>

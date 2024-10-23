@@ -1,0 +1,475 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamScreen</title>
+    <link rel="shortcut icon" href="c:\Users\HP\Downloads\1x\1x\pathtoyourlogo.png.png" type="DreamScreen">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Movie Design</title>
+</head>
+<style>
+    * {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  /* background-color: #000000; */
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+}
+.material-symbols-outlined{
+  color: #4dbf00;
+  margin-top: +50px;
+  font-size: 5px;
+ 
+}
+.movie-list-item:hover .material-symbols-outlined,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
+  opacity: 1;
+}
+
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+  color: white;
+  font-family: "Sen", sans-serif;
+  cursor: pointer;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  font-size: 35px;
+  color: #4dbf00;
+  margin-left: 35px;
+}
+.tyu{
+  color: white;
+  text-decoration: none;
+  margin-left: -25px;
+  height: 100%;
+  display: flex;
+  font-family: "Sen", sans-serif;
+  cursor: pointer;
+   padding: 0 50px;
+}
+.tyu:hover{
+  color: #4dbf00;
+}
+
+
+.menu-container {
+  flex: 6;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+}
+
+.menu-list-item {
+  margin-right: 30px;
+}
+.menu-list-item:hover{
+  color: #4dbf00;
+}
+
+.menu-list-item.active {
+  font-weight: bold;
+}
+.profile-container {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.profile-text-container {
+  margin: 0 20px;
+}
+
+.profile-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.toggle {
+  width: 40px;
+  height: 20px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.toggle-icon {
+  color: goldenrod;
+}
+
+.toggle-ball {
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  position: absolute;
+  right: 1px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s ease all;
+}
+
+.sidebar {
+  width: 50px;
+  height: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.left-menu-icon {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.container {
+  background-color: #151515;
+  min-height: calc(100vh - 50px);
+  color: white;
+}
+
+.content-container {
+  margin-left: 50px;
+}
+
+.hi {
+  height: 20vh;
+  margin-top: -20px;
+  image-resolution: 500px;
+
+}
+.coming{
+    margin-top: 130px;
+    margin-left: 50px;
+    image-resolution: 500px;
+    
+ 
+
+}
+.dog{
+    height: 39vh;
+    border-radius: 8px;
+    object-fit: cover;
+    image-resolution: 500px;
+}
+.coming h1{
+    margin-top: -230px;
+    font-size: 18px;
+    margin-left: 175px;
+    font-weight: bolder;
+}
+.coming p{
+    margin-top: 10px;
+    margin-left: 175px;
+    font-size: 10px;
+    font-weight: 400px;
+}
+.release p{
+    margin-top: 7px;
+    margin-left: 225px;
+    font-size: 10px;
+    font-weight: 400px;
+}
+.comings{
+    margin-top: 180px;
+    margin-left: 50px;
+    image-resolution: 500px;
+    
+ 
+
+}
+.dogs{
+    height: 39vh;
+    border-radius: 8px;
+    object-fit: cover;
+    image-resolution: 500px;
+}
+.comings h1{
+    margin-top: -230px;
+    font-size: 18px;
+    margin-left: 170px;
+    font-weight: bolder;
+}
+.comings p{
+    margin-top: 10px;
+    margin-left: 173px;
+    font-size: 10px;
+    font-weight: 400px;
+}
+.releases p{
+    margin-top: 7px;
+    margin-left: 223px;
+    font-size: 10px;
+    font-weight: 400px;
+}
+.comingss{
+    margin-top: -650px;
+    margin-left: 680px;
+    image-resolution: 500px;
+    
+ 
+
+}
+.dogss{
+    height: 39vh;
+    border-radius: 8px;
+    object-fit: cover;
+    image-resolution: 500px;
+}
+.comingss h1{
+    margin-top: -230px;
+    font-size: 18px;
+    margin-left: 170px;
+    font-weight: bolder;
+}
+.comingss p{
+    margin-top: 10px;
+    margin-left: 175px;
+    font-size: 10px;
+    font-weight: 400px;
+}
+.releasess p{
+    margin-top: 7px;
+    margin-left: 855px;
+    font-size: 10px;
+    font-weight: 400px;
+}
+
+
+
+.headerbg {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(34, 31, 31, 1) 0%, rgba(34, 31, 31, 0.4) 100%)
+}
+
+header {
+  height: 10vh;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+header .navbar {
+  align-items: center;
+  transition: 0.5s;
+}
+
+header nav ul {
+  display: inline-block;
+  font-size: 16px;
+}
+
+header nav ul li a {
+  color: white;
+  transition: all 300ms ease-in-out;
+}
+
+header nav ul li a:hover {
+  color: #E50916;
+}
+
+header nav ul li {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+header .navbar span {
+  text-align: center;
+  margin-left: 20px;
+  color: black;
+  font-size: 25px;
+  display: none;
+}
+
+.subscribe i:nth-child(1) {
+  margin-top: 17px;
+}
+
+.subscribe i {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+#palybtn {
+  background: #E50916;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+button {
+  background: #E50916;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0px 30px;
+  cursor: pointer;
+}
+
+.subscribe button {
+  margin-left: 15px;
+}
+
+header.sticky .headerbg {
+  position: relative;
+}
+
+header.sticky {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #000;
+  transition: 0.5s;
+  height: 10vh;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+header.sticky .subscribe {
+  display: none;
+}
+
+
+</style>
+
+<body>
+
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">DreamScreen</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Movies Location</li>
+                    <a href="ticket.html" class="tyu">Book now</a>
+                    <li class="menu-list-item">Popular</li>
+                    <li class="menu-list-item">Contact Us</li>
+
+                </ul>
+            </div>
+            <!-- <div class="profile-container">
+                <img class="profile-picture" src="c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\TempState\0879D1169D86866B3C5EB9643D2DBB9F\WhatsApp Image 2024-09-03 at 03.21.04_b560a8a8.jpg" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fas fa-caret-down"></i> -->
+                </div>
+                <!-- <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- <div class="sidebar">
+        <i class="left-menu-icon fas fa-search"></i>
+        <i class="left-menu-icon fas fa-home"></i>
+        <i class="left-menu-icon fas fa-users"></i>
+        <i class="left-menu-icon fas fa-bookmark"></i>
+        <i class="left-menu-icon fas fa-tv"></i>
+        <i class="left-menu-icon fas fa-hourglass-start"></i>
+        <i class="left-menu-icon fas fa-shopping-cart"></i>
+    </div> -->
+   <div class="hi">
+   <img src="c:\Users\HP\Downloads\Comimg-soon-banner-1.png2.png" class="them">
+   </div>
+   <div class="coming">
+    <img src="c:\Users\HP\Downloads\2304.jpg" class="dog" >
+    <h1>Queen Lateefah</h1>
+    <p>Lateefah Adeleke 30, is a gorgeous and charming business woman who claims to 
+        <br>
+         travel the world and rub shoulders with societies crème-de-la-crème    and lives the
+        <br>
+       the softest of the soft life....</p>
+   </div>
+   <div class="release">
+    <p>Release Date: 27th September, 2024</p>
+   </div>
+   <div class="comings">
+    <img src="c:\Users\HP\Downloads\imghome-img-4.jpeg.jpeg.jpeg" class="dogs" >
+    <h1>Hounds of war</h1>
+    <p>After a mission goes wrong, only one of a group of mercenaries is left alive to avenge his
+        <br>
+         fallen brothers.</p>
+   </div>
+   <div class="releases">
+    <p>Release Date: 27th September, 2024</p>
+   </div>
+   <div class="comings">
+    <img src="c:\Users\HP\Downloads\84u638vpuo6k2hy-786054cd3ebfbc9dfcb6221398242404.jpeg" class="dogs" >
+    <h1>Hellboy: The Crooked 
+        <br>
+        Man</h1>
+    <p>Hellboy and a rookie BPRD agent get stranded in 1950s rural Appalachia. There, they 
+        <br>
+        discover a small community haunted by witches, led by a local devil with a troubling
+        <br>
+         connection to Hellboy's past: the Crooked Man.</p>
+   </div>
+   <div class="releases">
+    <p>Release Date: 27th September, 2024</p>
+   </div>
+   <div class="comingss">
+    <img src="c:\Users\HP\Downloads\video_6f932b55f39ef6b99356fcdde5bb1923.jpeg" class="dogss" >
+    <h1>The Wild Robot</h1>
+    <p>LShipwrecked on a deserted island, a robot named Roz must 
+        <br>
+        learn to adapt to its new surroundings. Building 
+        <br>
+        relationships with the native animals, Roz soon develops a 
+        <br>
+        parental bond with an orphaned gosling.</p>
+   </div>
+   <div class="releasess">
+    <p>Release Date: 27th September, 2024</p>
+   </div>
+   
+   
+   
+    
+</body>
+</html>

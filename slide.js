@@ -90,7 +90,7 @@ arrows.forEach((arrow, i) => {
 
 const ball = document.querySelector(".toggle-ball");
 const items = document.querySelectorAll(
-  ".container,.movie-list-title,.navbar-container,.sidebar,.left-menu-icon,.toggle, .menu-list-item,.po, .ed,.body, .sqi h1, .search .fa-search, .search input::placeholder,.search, .sqi h1:hover, .sqi2 h1, .sqi2 h1:hover,.sqi3 h1, .sqi3 h1:hover"
+  ".container,.movie-list-title,.navbar-container,.sidebar,.left-menu-icon,.toggle, .nav-menu a,.po, .ed,.body, .sqi h1, .search .fa-search, .search input::placeholder,.search, .sqi h1:hover, .sqi2 h1, .sqi2 h1:hover,.sqi3 h1, .sqi3 h1:hover"
 );
 
 ball.addEventListener("click", () => {
